@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Prompt User Input Login</title>
+</head>
+<body>
+    <script>
+        var username = prompt("Enter your username: ");
+        var password = prompt("Enter your password: ");
+        var confirmpassword = prompt("Confirm your password: ");
+
+        if(password == confirmpassword && password.length >=8)
+    {
+        document.write("Hello " + username + " Your password is " + password);
+    }
+    else
+    {
+        document.write("Something went wrong.");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing HTML Element By Class Name</title>
+</head>
+<body>
+    <p class="hi"></p>
+    <script>
+        // Method 1
+
+        // document.getElementsByClassName("hi")[0].innerHTML = "Hello Sanothimi";
+
+        // Method 2
+        /* var temp = document.getElementsByClassName("hi")[0];
+         temp.innerHTML ="Hello Sanothimi";*/
+        
+        // method 3
+        var temp = document.getElementsByClassName("hi");
+        temp[0].innerHTML ="Hello Sanothimi";
+
+        // Insertinng backgroundcolor
+        var temp = document.getElementsByClassName("hi");
+        temp[0].style.backgroundColor ="green";
+    </script>
+</body>
+</html>
